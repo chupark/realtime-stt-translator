@@ -21,9 +21,9 @@ def main():
     try:
         for text in stt_service.start_recognition():
             if is_non_empty_text(text):
-                # translated_text = translation_service.translate(text=text)
+                translated_text = translation_service.translate(text=text)
                 print(f"한글 : {text}")
-                # print(f"일어 : {translated_text}")
+                print(f"일어 : {translated_text}")
 
     except KeyboardInterrupt:
         print("프로그램을 종료합니다.")
