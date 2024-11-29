@@ -1,6 +1,6 @@
 # 클로바 STT를 사용한 실시간 번역
 Clova Speech의 실시간 음성인식과 Papago API를 활용한 실시간 한-일 번역 프로그램 입니다.  
-STT만 필요할 경우 `src/main.py` 파일을 아래 사진과 같이 빨간색 박스 부분을 주석처리하여 사용합니다.  
+STT만 필요할 경우 `src/main.py` 파일을 아래 사진과 같이 빨간색 박스 부분을 주석처리하여 사용합니다. 또한 [실행 방법](#실행-방법)의 환경변수 설정의 생략이 가능합니다. 자세한 내용은 [실행 방법](#실행-방법)참조.  
 ![alt text](images/image.png)
 
 <br>
@@ -30,6 +30,8 @@ pip install --upgrade google-api-python-client
 
 ## 환경변수 입력
 export CLOVA_API_KEY="<CLOVA_API_KEY>"
+# STT만 사용할 경우, 아무 값이나 넣어도 됨
+# 예시 export PAPAGO_CLIENT_ID="aa"
 export PAPAGO_CLIENT_ID="<PAPAGO_CLIENT_ID>"
 export PAPAGO_CLIENT_SECRET="<PAPAGO_CLIENT_SECRET>"
 
