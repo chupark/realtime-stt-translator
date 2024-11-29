@@ -22,6 +22,7 @@ brew install portaudio
 
 ## 의존성 설치
 pip install -r requirements.txt
+## 의존성 설치에 불구하고 실행이 안될 경우 아래 패키지 설치
 pip install pyaudio
 pip install grpcio
 pip install --upgrade google-api-python-client
