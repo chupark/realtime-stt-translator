@@ -7,24 +7,27 @@ STT만 필요할 경우 `src/main.py` 파일을 아래 사진과 같이 빨간�
 
 # 실행 방법
 ```bash
-# 가상 환경 만들기
+## 가상 환경 만들기
 python3 -m venv .venv
 
-# 가상 환경 실행
+## 가상 환경 실행
+# MAC / Linux
 . .venv/bin/activate
+# Windows
+. .venv/Script/activate
 
 ## for mac
 # MAC은 pyaudio 설치 전 portaudio 설치가 필요합니다.
 brew install portaudio
 
-# 의존성 설치
+## 의존성 설치
 pip install -r requirements.txt
 pip install pyaudio
 pip install grpcio
 pip install --upgrade google-api-python-client
 
 
-# 환경변수 입력
+## 환경변수 입력
 export CLOVA_API_KEY="<CLOVA_API_KEY>"
 export PAPAGO_CLIENT_ID="<PAPAGO_CLIENT_ID>"
 export PAPAGO_CLIENT_SECRET="<PAPAGO_CLIENT_SECRET>"
